@@ -1,0 +1,45 @@
+::ng-deep :root {
+  --red: #E00015;
+  --blue: #00ADEF;
+  --white: #FFFFFF;
+  --light-gray: #FCFBFB;
+  --dark: #333;
+}
+
+#c4nlogo1 {
+  position: absolute;
+  left: 0%;
+  top: -2.5%;
+  width: 25%;
+}
+#c4nlogo2 {
+  position: absolute;
+  right: 0%;
+  top: -2.5%;
+  width: 25%;
+}
+#titleText {
+  color: var(--blue);
+  text-align: center;
+  font-size: 3em;
+}
+.card {
+  display: inline-flex;
+  width: 25%;
+  height: 250px;
+}
+
+#contactcard {
+  alignment: left;
+}
+
+#symptomcard {
+  float: right;
+}
+
+.map {
+  padding-left: 30%;
+}
+.form {
+  padding-left: 25%;
+}

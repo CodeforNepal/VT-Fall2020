@@ -1,0 +1,33 @@
+
+::ng-deep :root {
+  --red: #E00015;
+  --blue: #00ADEF;
+  --white: #FFFFFF;
+  --light-gray: #FCFBFB;
+  --dark: #333;
+}
+.map
+{
+  display: inline;
+  width: 50%;
+  height: 200px;
+}
+
+
+
+
+#key
+{
+  alignment: center;
+  border: 15px solid var(--blue);
+  width: 50%;
+}
+
+.map
+{
+  alignment: center;
+  border: 15px solid var(--blue);
+  width: 50%;
+}
+
+

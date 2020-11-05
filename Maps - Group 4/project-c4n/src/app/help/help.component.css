@@ -1,0 +1,15 @@
+::ng-deep :root {
+  --red: #E00015;
+  --blue: #00ADEF;
+  --white: #FFFFFF;
+  --light-gray: #FCFBFB;
+  --dark: #333;
+}
+
+div {
+  border: 15px solid var(--blue);
+  background-color: var(--light-gray);
+  float: right;
+  width: 20%;
+  height: 50px;
+}

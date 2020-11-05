@@ -1,3 +1,23 @@
+## To Run
+run these commands in the terminal in the project-c4n directory:
+	
+  `npm install` and 
+  `ng serve`
+	
+Then go into any browser and paste http://localhost:4200/ into the nav bar.
+
+Note:
+If you run into some issures with angular/material, try running this command:
+	`npm install --save @angular/material @angular/cdk @angular/animations`
+
+## When Pushing
+Always remember to delete node_modules before pushing. It uses up a large amount of space and will just needlessly slow down the push and pull times.
+
+
+
+
+Everything below here is automatically generated. But may still be helpful.
+
 # ProjectC4n
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.

@@ -1,3 +1,20 @@
+## First-time setup
+run these commands in the terminal in the project-c4n directory:
+
+  `npm ci`
+
+This will install all dependencies from package.json and package-lock.json.
+
+## To Run
+run these commands in the terminal in the project-c4n directory:
+	
+  `ng serve`
+	
+Then go into any browser and paste http://localhost:4200/ into the nav bar.
+
+
+Everything below here is automatically generated. But may still be helpful.
+
 # ProjectC4n
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.

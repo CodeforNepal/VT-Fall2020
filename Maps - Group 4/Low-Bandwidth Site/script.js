@@ -124,3 +124,11 @@ function addTown() {
 	
 	alert('New town submitted. Thank you.');
 }
+
+/*
+Add a new test center to the database
+*/
+function addTestCenter() {
+
+	alert('New test center submitted. Thank you.');
+}

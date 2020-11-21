@@ -4,7 +4,8 @@
     <head>
         <title>COVID-19 Resources</title>
         <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" src="script.js"></script>
+       <script type="text/javascript" src="script.js"></script>
+	
     </head>
     <body>
         <img id="c4nlogo1" alt="Code for Nepal Logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Code_For_Nepal_Logo.png"/>
@@ -13,9 +14,14 @@
             COVID-19 has greatly impacted all of our lives.
         </p>
         <form>
-            <input type="text" id="userInput" placeholder="Enter Information">
-            <input type="submit" onclick="getInput()" value="Submit">
+            <input type="text" id="townInput" placeholder="Enter Town Name">
+            <input type="text" id="distanceInput" placeholder="Enter Distance Information">
+            <input type="button" onclick="getInput()"">
+			<div id = "results">
+			</div>
         </form>
         <img id="c4nlogo1" alt="Code for Nepal Logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Code_For_Nepal_Logo.png"/>
+		
+		
     </body>
 </html>

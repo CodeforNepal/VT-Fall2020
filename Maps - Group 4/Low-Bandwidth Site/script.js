@@ -1,19 +1,47 @@
 /*
 the list of towns. hardcoded for simplicity in the example.
 */
+// Will be read from csv file
 const towns = [
 {name: "town1", x: 100, y: 100},
 {name: "town2", x: 110, y: 100},
 {name: "town3", x: 100, y: 110},
 {name: "town4", x: 110, y: 110}
 ];
-const restaurants = [
+const test_centers = [
 {name: "McDonalds", x: 100, y: 100},
 {name: "Wendys", x: 110, y: 100},
 {name: "Dominos", x: 100, y: 110},
 {name: "Pizza Hut", x: 110, y: 110},
 ];
 const UNITS = "KM";
+
+// var towns;
+// $.ajax({
+// 	type: "GET",
+// 	url: "towns.csv",
+// 	dataType: "text",
+// 	success: (response) => {
+// 		towns = csv.toObjects(response);
+// 	},
+// 	error: (response) => {
+// 		alert("Error opening towns file: " + response);
+// 	}
+// });
+
+// var test_centers;
+// $.ajax({
+// 	type: "GET",
+// 	url: "test_centers.csv",
+// 	dataType: "text",
+// 	success: (response) => {
+// 		test_centers = csv.toObjects(response);
+// 	},
+// 	error: (response) => {
+// 		alert("Error opening test centers file: " + response);
+// 	}
+// });
+
 /*
 process the input the users send.
 */
@@ -45,7 +73,7 @@ function getInput() {
 		return;
 	}
     //alert("Information Submitted. Thank you.");
-    findRestaurants(distInput.value, town);
+    findTestCenters(distInput.value, town);
 }
 
 /*
@@ -67,21 +95,19 @@ function getTown(town)
 	return null;
 }
 
-
-
 /*
-find all restaurants within the distance of the town selected and display them on the main page
+find all test centers within the distance of the town selected and display them on the main page
 */
-function findRestaurants(distance, town)
+function findTestCenters(distance, town)
 {
 	let disp = document.getElementById("results");
 	removeAllChildNodes(disp);
-	for(let i = 0; i < restaurants.length; i++)
+	for(let i = 0; i < test_centers.length; i++)
 	{
-		let rDist = findDistance(restaurants[i], town)
+		let rDist = findDistance(test_centers[i], town)
 		if( rDist <= distance)
 		{
-			let elem = document.createTextNode(restaurants[i].name + ' is ' + rDist + ' ' + UNITS + ' away.');
+			let elem = document.createTextNode(test_centers[i].name + ' is ' + rDist + ' ' + UNITS + ' away.');
 			let elem2 = document.createElement("br");
 			disp.appendChild(elem);
 			disp.appendChild(elem2);
@@ -98,6 +124,7 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     }
 }
+
 /*
 find distance between two town JSON's
 */
@@ -112,10 +139,6 @@ return Math.sqrt(x + y);
 Add a new town to the database
 */
 function addTown() {
-	towns.push({
-		name: document.getElementsById(newTown),
-		x: document.getElementById(newX),
-		y: document.getElementById(newY)
-	});
+	
 	alert('New town submitted. Thank you.');
 }

@@ -1,7 +1,6 @@
 /*
 the list of towns. hardcoded for simplicity in the example.
 */
-// Will be read from csv file
 const towns = [
 {name: "town1", x: 100, y: 100},
 {name: "town2", x: 110, y: 100},
@@ -16,31 +15,14 @@ const test_centers = [
 ];
 const UNITS = "KM";
 
+// Will create a simple server to serve csv files for final
 // var towns;
-// $.ajax({
-// 	type: "GET",
-// 	url: "towns.csv",
-// 	dataType: "text",
-// 	success: (response) => {
-// 		towns = csv.toObjects(response);
-// 	},
-// 	error: (response) => {
-// 		alert("Error opening towns file: " + response);
-// 	}
-// });
+// fetch('http://localhost/towns.csv')
+// 	.then((response) => towns = $.csv.toObjects(response));
 
 // var test_centers;
-// $.ajax({
-// 	type: "GET",
-// 	url: "test_centers.csv",
-// 	dataType: "text",
-// 	success: (response) => {
-// 		test_centers = csv.toObjects(response);
-// 	},
-// 	error: (response) => {
-// 		alert("Error opening test centers file: " + response);
-// 	}
-// });
+// fetch('http://localhost/test_centers.csv')
+// 	.then((response) => test_centers= $.csv.toObjects(response));
 
 /*
 process the input the users send.

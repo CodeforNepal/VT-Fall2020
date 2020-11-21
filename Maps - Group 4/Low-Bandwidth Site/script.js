@@ -107,3 +107,15 @@ let x = Math.pow(town1.x - town2.x, 2);
 let y = Math.pow(town1.y - town2.y, 2);
 return Math.sqrt(x + y);
 }
+
+/*
+Add a new town to the database
+*/
+function addTown() {
+	towns.push({
+		name: document.getElementsById(newTown),
+		x: document.getElementById(newX),
+		y: document.getElementById(newY)
+	});
+	alert('New town submitted. Thank you.');
+}

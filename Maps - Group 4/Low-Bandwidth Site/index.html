@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+     <body style="background-color:powderblue;"></body>
+    <head>
+        <meta charset="UTF-8">
+        <title>COVID-19 Resources</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="node_modules/jquery-csv/src/jquery.csv.min.js"></script> -->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <img alt="Code for Nepal Logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Code_For_Nepal_Logo.png"/>
+        <div>
+            <h1>COVID-19 Resources</h1>
+            <p>
+                Please follow proper safety guidelines which include <b> social distancing 6 feet apart and wearing a mask. </b>
+                <br>Enter your town name and distance below to find COVID-19 testing centers near you. 
+            </p>
+            <form>
+                <input type="text" id="townInput" placeholder="Enter Town Name">
+                <input type="text" id="distanceInput" placeholder="Enter Distance Information">
+                <input type="button" onclick="getInput()" value="Submit">
+                <div id = "results">
+                </div>
+            </form>
+            <a href="enter-info.html">Have more data to add? Enter it here.</a>
+            <p>
+                Common COVID-19 symptoms include <b>fever, chills, shortness of breath, cough, and fatigue</b>.    
+                <br>In the event of a medical emergency, please call the following number: <b>102</b>. 
+            </p>
+        </div>
+    </body>
+</html>

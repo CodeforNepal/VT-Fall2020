@@ -19,6 +19,7 @@ https://mongoose0812.wixsite.com/cfndocumentation
 All topic videos are located in a shared Google Drive folder.
 Anybody should be able to access the folder with the following link:
 https://drive.google.com/drive/folders/1ZxaP7oKO4nkgq-cKRC8ZzrXlu1EkLMbC?usp=sharing
+
 Note: The topics Google Docs and Microsoft Excel Functions do not have video documentation.
 
 Similarly, Microsoft Paint and Creating Websites with Wix do not have written documentation.
